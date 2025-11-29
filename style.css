@@ -1,8 +1,7 @@
 /* HERO SECTION */
 .hero-section {
     height: 100vh;
-    background: url("https://imgs.search.brave.com/Ovx-US7k0e5qBMO7Er60XOurh6oO7BR7_gFLcTAsmGg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbGVhZi1wYXR0/ZXJuLWdyYXktYmFj/a2dyb3VuZC12ZWN0/b3JfNTM4NzYtMTY0/NTE4LmpwZz9zZW10/PWFpc19pbmNvbWlu/ZyZ3PTc0MCZxPTgw") 
-    no-repeat center center/cover;
+    background: url("https://imgs.search.brave.com/Ovx-US7k0e5qBMO7Er60XOurh6oO7BR7_gFLcTAsmGg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbGVhZi1wYXR0/ZXJuLWdyYXktYmFj/a2dyb3VuZC12ZWN0/b3JfNTM4NzYtMTY0/NTE4LmpwZz9zZW10/PWFpc19pbmNvbWlu/ZyZ3PTc0MCZxPTgw"); 
     display: flex;
     justify-content: center;
     align-items: center;
