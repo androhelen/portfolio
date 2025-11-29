@@ -1,0 +1,218 @@
+/* === HEADER STICKY === */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  z-index: 1000;
+}
+
+/* === NAVIGATION INLINE LIST === */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+nav ul li a:hover {
+  background-color: gold;
+  color: #222;
+}
+
+/* === ABOUT SECTION RELATIVE + DECORATIVE ABSOLUTE === */
+#about {
+  position: relative;
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+#about::after {
+  content: "★";
+  position: absolute;
+  font-size: 3em;
+  top: 20px;
+  right: 30px;
+  color: rgba(0,0,0,0.1);
+}
+
+/* === SKILLS SECTION STATIC FLOW (default) === */
+#skills {
+  position: static;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.skills-container {
+  /* We’ll keep layout simple, no flexbox / grid here */
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+.skill-category {
+  position: relative;
+  display: inline-block;
+  width: calc(50% - 40px);
+  margin: 20px;
+  vertical-align: top;
+}
+.skill-category h3 {
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+.skill-category ul li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* === PROJECTS SECTION — CARD ABSOLUTE BADGE === */
+#projects {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.projects-container {
+  /* simple inline‑block layout */
+  text-align: center;
+}
+.project-card {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.project-card::before {
+  content: "✔";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.2em;
+  color: #0077b6;
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.project-card h3 {
+  margin-bottom: 10px;
+}
+.project-card p {
+  margin-bottom: 15px;
+}
+.project-card a {
+  text-decoration: none;
+  background-color: #0077b6;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+.project-card a:hover {
+  background-color: #005f8a;
+}
+
+/* === CONTACT SECTION with FIXED BUTTON === */
+#contact {
+  padding: 80px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+#contact form {
+  max-width: 400px;
+  margin: auto;
+}
+#contact label,
+#contact input,
+#contact textarea,
+#contact button {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+#contact input,
+#contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#contact button {
+  background-color: gold;
+  border: none;
+  color: #222;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#contact button:hover {
+  background-color: orange;
+}
+
+/* Add a fixed‐position “back to top” or “contact me” button */
+.fixed-contact-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.fixed-contact-btn:hover {
+  background-color: #005f8a;
+}
+
+/* === FOOTER STATIC === */
+footer {
+  position: static;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-top: 3px solid gold;
+}
+/* Responsive: Adapt for tablets/mobile */
+@media (max-width: 900px) {
+  section {
+    padding: 32px 24px;
+    max-width: 98vw;
+  }
+}
+@media (max-width: 600px) {
+  header, section, footer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  #projects img {
+    height: 140px;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
