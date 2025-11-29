@@ -1,0 +1,44 @@
+/* HERO SECTION */
+.hero-section {
+    height: 100vh;
+    background: url("https://imgs.search.brave.com/Ovx-US7k0e5qBMO7Er60XOurh6oO7BR7_gFLcTAsmGg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbGVhZi1wYXR0/ZXJuLWdyYXktYmFj/a2dyb3VuZC12ZWN0/b3JfNTM4NzYtMTY0/NTE4LmpwZz9zZW10/PWFpc19pbmNvbWlu/ZyZ3PTc0MCZxPTgw") 
+    no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(19, 18, 18);
+    padding-top: 60px;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero-section h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* SKILLS GRID */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.skill-item {
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
